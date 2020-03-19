@@ -21,13 +21,29 @@ KEY_PATH="~/secrets/wow.pem"
 
 Ensure you are in the directory where the script is. Run the script `./servitor.sh <command>`
 
+### `./servitor.sh start`
+
 Start your aws instance and ssh into it.
 Sends the start signal to AWS and waits for the instance to fully start before conneting to it.
+
+Sample output:
 ```
-./servitor.sh start
+Trying to connect to beato-aws-deep... (will start it if turned off)
+Instance is starting... Trying again in 1 second(s)...
+Instance is starting... Trying again in 1 second(s)...
+Instance is starting... Trying again in 1 second(s)...
+Instance is starting... Trying again in 1 second(s)...
+Instance is starting... Trying again in 1 second(s)...
+Started beato-aws-deep! Connecting...
+<ssh session starts>
 ```
 
+### ./servitor.sh stop
+
 Sends the stop signal to AWS and tells you when it has successfully shut down
+ 
+Sample output:
 ```
-./servitor.sh stop
+Stopping beato-aws-deep... The signal has been sent, you may exit this command with CTRL+c or wait for confirmation.
+beato-aws-deep successfully stopped.
 ```
