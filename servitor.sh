@@ -45,11 +45,11 @@ function start {
 }
 
 function stop {
-    echo "Stopping $INSTANCE_NAME... The signal has been sent, you may exit this command or wait for confirmation."
+    echo "Stopping $INSTANCE_NAME... The signal has been sent, you may exit this command (CTRL+C) or wait for confirmation."
     while [ "stopped" != $(aws ec2 stop-instances --instance-ids $INSTANCE_ID | parseJson "['StoppingInstances'][0]['CurrentState']['Name']") ]; do          
         sleep $SLEEP_TIME
     done
-    echo "$INSTANCE_NAME successfully stopped."
+    echo "$INSTANCE_NAME is stopped."
 }
 
 if [ "$1" == "start" ]; then
