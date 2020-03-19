@@ -11,7 +11,7 @@ Tiny utility for connecting to AWS servers.
 
 1. Download the script.
 2. Fill in the required variables:
-```
+```sh
 # --- YOUR DETAILS HERE ---
 # put your AWS instance's name here. Can be anything 
 INSTANCE_NAME=""
