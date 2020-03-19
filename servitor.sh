@@ -10,6 +10,8 @@ INSTANCE_NAME=""
 INSTANCE_ID=""
 # put the path to your .pem keyfile
 KEY_PATH="~/secrets/wow.pem"
+# example "ubuntu@12.123.456.78"
+INSTANCE_ADDRESS=""
 # --- END ---
 
 # so we dont spam
@@ -39,7 +41,7 @@ function start {
     echo "Started $INSTANCE_NAME! Connecting..."
     # give a little sleep
     sleep $SLEEP_TIME
-    ssh -i $KEY_PATH ubuntu@52.221.123.85
+    ssh -i $KEY_PATH $INSTANCE_ADDRESS
 }
 
 function stop {
