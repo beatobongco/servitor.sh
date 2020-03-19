@@ -43,7 +43,7 @@ Started beato-aws-deep! Connecting...
 <ssh session starts>
 ```
 
-### ./servitor.sh stop
+### `./servitor.sh stop`
 
 Sends the stop signal to AWS and tells you when it has successfully shut down
  
