@@ -1,6 +1,11 @@
 # servitor.sh
 
-Tiny utility for connecting to AWS servers
+Tiny utility for connecting to AWS servers.
+
+## Requirements
+
+1. Authenticated [AWS CLI](https://aws.amazon.com/cli/)
+2. An EC2 instance
 
 ## Setup
 
