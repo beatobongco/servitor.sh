@@ -31,7 +31,7 @@ function start {
         if [ "$RESULT" == "running" ]; then
             break
         else
-            echo "Instance is starting... Trying again in $SLEEP_TIME seconds..."
+            echo "Instance is starting... Trying again in $SLEEP_TIME second(s)..."
         fi
         # wait a second and repeat the loop until we can connect
         sleep $SLEEP_TIME
