@@ -1,7 +1,9 @@
 
 #!/bin/bash
 
-# Usage ./servitor
+# Usage: 
+# ./servitor.sh start - turn on vm, wait until on, then ssh into it
+# ./servitor.sh stop - turn off vm, tells you when it's completely off
 
 # --- YOUR DETAILS HERE ---
 # put your AWS instance's name here. Can be anything 
@@ -22,6 +24,7 @@ function parseJson {
     # output -> "5" 
     python3 -c "import fileinput, json; print(json.loads(''.join([line for line in fileinput.input()]))$1)"
 }
+
 function start {
     echo "Trying to connect to $INSTANCE_NAME... (will start it if turned off)"
     RESULT="not running"
