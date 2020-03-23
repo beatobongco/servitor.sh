@@ -51,6 +51,6 @@ Sends the stop signal to AWS and tells you when it has successfully shut down
  
 Sample output:
 ```
-Stopping beato-aws-deep... The signal has been sent, you may exit this command with CTRL+c or wait for confirmation.
+Stopping beato-aws-deep... The signal has been sent, you may exit this command (CTRL+C) or wait for confirmation.
 beato-aws-deep successfully stopped.
 ```
