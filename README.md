@@ -19,6 +19,8 @@ INSTANCE_NAME=""
 INSTANCE_ID=""
 # put the path to your .pem keyfile
 KEY_PATH="~/secrets/wow.pem"
+# example "ubuntu@12.123.456.78"
+INSTANCE_ADDRESS=""
 # --- END ---
 ```
 
